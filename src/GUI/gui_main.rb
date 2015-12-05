@@ -23,17 +23,17 @@ class GUIMain < Shoes
           tagline "Psyringe's Password Generator", :align => "center"
         end
 
-        stack :margin => 16, :margin_left => 64, :margin_right => 64, :width => "100%" do #Alias Textbox
+        stack :margin => 8, :margin_left => 64, :margin_right => 64, :width => "100%" do #Alias Textbox
           para "Alias"
           @alias = edit_line :text => Etc.getlogin, :width => "100%"
         end
 
-        para "+", :align => "center"
-
-        stack :margin => 16, :margin_left => 64, :margin_right => 64, width => "100%" do #Secret Textbox
+        stack :margin => 8, :margin_left => 64, :margin_right => 64, width => "100%" do #Secret Textbox
           para "Secret"
           @secret = edit_line :text => "google.com", :width => "100%"
         end
+
+        image "Asset/Image/Arrow.png", :margin_left => "48%", :margin_top => 16
       end
 
       #Actions
