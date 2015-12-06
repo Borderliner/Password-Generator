@@ -15,6 +15,12 @@ You can generate very strong passwords. All you have to do is to remember your s
 <b>NO!</b> I'm not a pro Ruby expert. This is my first Shoes3 app, so it has lots of issues.<br>
 ###I can fix your code or contribute to it. Is this possible?<br>
 Of course! Feel free to open issues or make pull requests. As said, I'm not pro, so my coding is kinda bad in Ruby. Help me if you can.<br>
+###Are you gonna create this app on other platforms?<br>
+Yes, I plan to make this app available on the following frameworks:<br>
+-Chromium Extension<br>
+-Firefox Extension<br>
+-Android<br>
+If I have time, I may recreate this in GTK, using C/C++.<br>
 ###License?<br>
 It's not a big deal for such an small code, but it's released under BSD 3-clause license.<br>
 <a href="mailto:psyringe@protonmail.com">psyringe@protonmail.com</a>
