@@ -8,6 +8,7 @@ It's built on Shoes3 for Ruby, with no other gems used.<br>
 2. Type in a secret, which acts as a key. It's easier to use one secret for all of your passwords, though be careful about your secret, because once somebody could know your secret, he can crack all your passwords.<br>
 3. Click on the "Generate" button.<br>
 4. The program generates a password for you in the "Password" field. Copy that and use it.<br>
+
 ###What good is this?<br>
 You can generate very strong passwords. All you have to do is to remember your secret for ever.<br>
 ###Are you a professional Ruby/Shoes3 programmer?<br>
