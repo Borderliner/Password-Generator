@@ -27,7 +27,7 @@ class GUIMain < Shoes
           @convert = button "Generate", :width => "100%", :margin_top => 16
         end
 
-        image "Asset/Image/Arrow.png", :margin_left => "48%", :margin_top => 16 #Arrow Image
+        image "Assets/Image/Arrow.png", :margin_left => "48%", :margin_top => 16 #Arrow Image
 
         stack :margin => 8, :margin_left => 64, :margin_right =>64, width => "100%" do #Password Textbox
           para "Password"
