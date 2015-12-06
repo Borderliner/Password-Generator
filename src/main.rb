@@ -1,4 +1,3 @@
-#!/usr/bin/ruby
 $LOAD_PATH << '.'
 require 'GUI/gui_main'
 
