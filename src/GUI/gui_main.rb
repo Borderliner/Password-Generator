@@ -41,13 +41,23 @@ class GUIMain < Shoes
 
       #Actions
       @generate.click do
-        shifted_text = @alias.text << '@' << @secret.text
-        @password.text = Crypt.sha1_base64(shifted_text)
+        if @secret.text.empty? == false && @alias.text.empty? == false
+          shifted_text = @alias.text << '@' << @secret.text
+          @password.text = Crypt.sha1_base64(shifted_text)
+        else
+          alert "Please provide an alias and a secret to proceed."
+        end
       end
 
       @copy_clipboard.click do
         app.clipboard = @password.text
         alert "Password was copied to clipboard!"
+      end
+
+      #Animations
+      @border_anim = animate(32) do |f|
+        app.border rgb(0, 4*f, 6*f), :strokewidth => 4
+        @border_anim.stop if f == 31
       end
     end
   end
