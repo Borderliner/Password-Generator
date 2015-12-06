@@ -45,7 +45,10 @@ class GUIMain < Shoes
         @password.text = Crypt.sha1_base64(shifted_text)
       end
 
-      @
+      @copy_clipboard.click do
+        app.clipboard = @password.text
+        alert "Password was copied to clipboard!"
+      end
     end
   end
 end
