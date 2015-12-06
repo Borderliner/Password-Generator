@@ -24,15 +24,19 @@ class GUIMain < Shoes
         stack :margin => 8, :margin_left => 64, :margin_right => 64, width => "100%" do #Secret Textbox
           para "Secret"
           @secret = edit_line :text => "", :width => "100%", :secret => true
+          @convert = button "Generate", :width => "100%", :margin_top => 16
         end
 
-        @convert = image "Asset/Image/Arrow.png", :margin_left => "48%", :margin_top => 16 #Arrow Image
+        image "Asset/Image/Arrow.png", :margin_left => "48%", :margin_top => 16 #Arrow Image
 
         stack :margin => 8, :margin_left => 64, :margin_right =>64, width => "100%" do #Password Textbox
           para "Password"
           @password = edit_box :height => 128, :width => "100%"
+          @copy_clipboard = button "Copy to Clipboard", :width => "100%", :margin_top => 16
         end
       end
+
+      #Actions
     end
   end
 end
