@@ -27,7 +27,7 @@ class GUIMain < Shoes
         stack :margin => 8, :margin_left => 64, :margin_right => 64, width => "100%" do #Secret Textbox
           para "Secret"
           @secret = edit_line :text => "", :width => "100%", :secret => true
-          @convert = button "Generate", :width => "100%", :margin_top => 16
+          @generate = button "Generate", :width => "100%", :margin_top => 16
         end
 
         image "Assets/Image/Arrow.png", :margin_left => "48%", :margin_top => 16 #Arrow Image
@@ -40,10 +40,12 @@ class GUIMain < Shoes
       end
 
       #Actions
-      @convert.click do
+      @generate.click do
         shifted_text = @alias.text << '@' << @secret.text
         @password.text = Crypt.sha1_base64(shifted_text)
       end
+
+      @
     end
   end
 end
