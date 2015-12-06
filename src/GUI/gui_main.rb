@@ -1,3 +1,6 @@
+$LOAD_PATH << '..'
+require "Modules/crypt"
+
 class GUIMain < Shoes
 
   def initialize(title = "Application", width = 640, height = 480, resizable = false)
@@ -37,6 +40,9 @@ class GUIMain < Shoes
       end
 
       #Actions
+      @convert.click do
+        @password.text = Crypt.sha1_base64(@alias.text)
+      end
     end
   end
 end
