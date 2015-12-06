@@ -41,7 +41,8 @@ class GUIMain < Shoes
 
       #Actions
       @convert.click do
-        @password.text = Crypt.sha1_base64(@alias.text)
+        shifted_text = @alias.text << '@' << @secret.text
+        @password.text = Crypt.sha1_base64(shifted_text)
       end
     end
   end
